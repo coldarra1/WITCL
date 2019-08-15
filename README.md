@@ -1,2 +1,7 @@
-# WITCL
-The learning materials of computer profession in WIT.
+# 武汉工程大学计算机系学习攻略
+  本项目由WIT ACM协会成员创办，旨在帮助工大计算机学生学业有成。
+  欢迎各位能够访问此项目，如果你对本项目有更好的建议，例如纠错、资料、选课、考试等，欢迎向组织者联系。
+  
+  组织者Q_Q
+    1531001402
+    
