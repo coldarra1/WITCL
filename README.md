@@ -5,8 +5,10 @@
 从未知到理解，过程是艰辛的，而在这个过程中我们时常收集起许多资料和情报。    
 我们也是这样的找各种各样的资料。    
 创建这个项目，意义在于让我们前人走过的弯路，后人少走，希望你们可以从中受益。    
-如何寻找资源： [寻找学习资源](https://raw.githubusercontent.com/IvyHole/WITCL/master/%E5%AF%BB%E6%89%BE%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%BA%90.docx "寻找学习资源")  
+如何寻找资源： [寻找学习资源](https://raw.githubusercontent.com/IvyHole/WITCL/master/%E5%AF%BB%E6%89%BE%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%BA%90.docx "寻找学习资源")   
+下载方式：在GitHub上找到并打开你想要下载的文件，点击Download即可，或者在直接点击[这里](https://codeload.github.com/IvyHole/WITCL/zip/master )下载全部。  
 （如果项目文件内存在侵权的文件们可以联系管理员删除）    
+
 ### 目录
 ***
 + 大一上
