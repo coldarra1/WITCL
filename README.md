@@ -1,6 +1,6 @@
 # 武汉工程大学计算机系学习攻略
 
-本项目由WIT ACM协会成员创办。感谢WIT ACM协会的支持（通过点击图片即可访问WIT ACM OJ）    
+本项目由WIT ACM协会成员创办，成立于2019.08。感谢WIT ACM协会的支持（通过点击图片即可访问WIT ACM OJ）    
 [![](/img/WITACM.png)](http://witacm.com/ "WIT ACM logo2")    
 从未知到理解，过程是艰辛的，而在这个过程中我们时常收集起许多资料和情报。    
 我们也是这样的找各种各样的资料。    
