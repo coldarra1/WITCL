@@ -7,7 +7,8 @@
 创建这个项目，意义在于让我们前人走过的弯路，后人少走，希望你们可以从中受益。    
 如何寻找资源： [寻找学习资源](https://raw.githubusercontent.com/IvyHole/WITCL/master/%E5%AF%BB%E6%89%BE%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%BA%90.docx "寻找学习资源")   
 下载方式：在GitHub上找到并打开你想要下载的文件，点击Download即可，或者在直接点击[这里](https://codeload.github.com/IvyHole/WITCL/zip/master )下载全部。  
-（如果项目文件内存在侵权的文件们可以联系管理员删除）    
+（如果项目文件内存在侵权的文件们可以联系管理员删除）  
+[备用下载地址](http://witcl.ys168.com/) 流量不多如果真的在github上下载不了再用备用地址。（ps：一般在github上刷新几次就可以下载了）
 
 ### 目录
 ***
