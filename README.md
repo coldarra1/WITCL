@@ -46,7 +46,7 @@ IvyHole：
 如果你想加入我们，可以联系IvyHole即可。    
 
 ###### 贡献过的同学
-[kcxz](https://github.com/kcxz "kcxz")、[IvyHole](https://github.com/IvyHole "IvyHole")
+[kcxz](https://github.com/kcxz "kcxz")、[IvyHole](https://github.com/IvyHole "IvyHole")、[Chaney丶](https://www.witchen.cn "Chaney丶")
 
 ### 警告
 ***
