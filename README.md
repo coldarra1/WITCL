@@ -56,6 +56,7 @@
 康次学长：
 >github： [kcxz](https://github.com/kcxz "kcxz")  
 >Facebook： [康次学长](https://www.facebook.com/xiao.kang.5209 "kcxz")  
+>Twitter: [xiaokang](twitter.com/56671265)  
 >资料捐赠邮箱： 1531001402@qq.com  
         
 IvyHole：
