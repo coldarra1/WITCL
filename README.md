@@ -88,7 +88,7 @@ Chars：
 如果你想加入我们，可以联系IvyHole即可。    
 
 ###### 贡献过的同学
-[kcxz](https://github.com/kcxz "kcxz")、[IvyHole](https://github.com/IvyHole "IvyHole")、[Chaney丶](https://www.witchen.cn "Chaney丶")、[StarrySky](https://starrysky1024.com/ "StarrySky")
+[kcxz](https://github.com/kcxz "kcxz")、[IvyHole](https://github.com/IvyHole "IvyHole")、[Chaney丶](https://www.witchen.cn "Chaney丶")、[StarrySky](https://starrysky1024.com/ "StarrySky")、[kingwhylove](https://gitee.com/kingwhylove)
 ### 警告
 ***
 #### 武汉工程大学学生违纪处分办法（修订）    2016-08-27
