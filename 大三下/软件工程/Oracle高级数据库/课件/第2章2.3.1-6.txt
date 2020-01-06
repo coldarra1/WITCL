@@ -1,0 +1,26 @@
+CREATE DATABASE  database_name
+  { 	 USER SYS IDENTIFIED BY password
+  		| USER SYSTEM IDENTIFIED BY password
+  		| CONTROLFILE REUSE
+		| MAXDATAFILES integer
+  		| MAXINSTANCES integer
+		| {ARCHIVELOG¶ÚNO ARCHIVELOG}
+  		| CHARACTER SET charset
+  		| NATIONAL CHARACTER SET charset
+  		| SET DEFAULT
+         { BIGFILE | SMALLFILE } TABLESPACE
+  		| [ LOGFILE [ GROUP integer ] < file_specification >
+		| MAXLOGFILES integer 
+		| MAXLOGMEMBERS integer
+		| MAXLOGHISTORY integer
+		| FORCE LOGGING
+		| DATAFILE <file_specification>
+			[ AUTOEXTEND [ OFF¶ÚON [ NEXT integer [K®OM | G | T ] 
+			MAXSIZE [ UNLIMITED¶Úinteger [K®OM | G | T ]]]]
+		| DEFAULT TABLESPACE tablespace [DATAFILE <file_specification> ]
+		| [ BIGFILE | SMALL] UNDO TABLESPACE tablespace [ DATAFILE <file_specification>]
+  		| SET TIME_ZONE='time_zone'
+  }... ;
+∆‰÷–£∫
+<file_specification>::=
+	('path\filename') [ SIZE integer [ K®OM | G | T] [ REUSE ]],°≠n]

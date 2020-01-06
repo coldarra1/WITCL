@@ -1,0 +1,4 @@
+﻿  源.cpp
+g:\vs\c语言作业\7-5\7-5\源.cpp(9): warning C4101: “n”: 未引用的局部变量
+  7-5.vcxproj -> G:\vs\C语言作业\7-5\Debug\7-5.exe
+  7-5.vcxproj -> G:\vs\C语言作业\7-5\Debug\7-5.pdb (Partial PDB)
