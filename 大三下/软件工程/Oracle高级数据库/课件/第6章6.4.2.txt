@@ -1,0 +1,24 @@
+DECLARE 
+   	a number;
+   	b number;
+  	c number;
+	x1 number;
+  	x2 number;
+   	d number;
+BEGIN
+   a:=1;
+   b:=4;
+   c:=3;
+   d:=b*b-4*a*c;
+   IF a=0 THEN
+    	x1:=-c/b;
+      	DBMS_OUTPUT.PUT_LINE ('只有一个平方根' || to_char(x1));
+   ELSIF d<0 THEN
+     	DBMS_OUTPUT.PUT_LINE ('没有算术平方根');
+      ELSE
+        x1:=(-b+sqrt(d))/(2*a);
+        x2:=(-b-sqrt(d))/(2*a);
+        DBMS_OUTPUT.PUT_LINE ('第一个平方根' || to_char(x1));
+        DBMS_OUTPUT.PUT_LINE ('第二个平方根' || to_char(x2));
+      	END IF;
+END;

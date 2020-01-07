@@ -47,6 +47,8 @@
     + 数据库
     + 算法设计与分析
     + 软件工程
++ 大三下
+    + 软件工程
 + 考研
     + 华中科技大学
     + 武汉大学933计算机基础
@@ -88,7 +90,7 @@ Chars：
 如果你想加入我们，可以联系IvyHole即可。    
 
 ###### 贡献过的同学
-[kcxz](https://github.com/kcxz "kcxz")、[IvyHole](https://github.com/IvyHole "IvyHole")、[Chaney丶](https://www.witchen.cn "Chaney丶")、[StarrySky](https://starrysky1024.com/ "StarrySky")
+[kcxz](https://github.com/kcxz "kcxz")、[IvyHole](https://github.com/IvyHole "IvyHole")、[Chaney丶](https://www.witchen.cn "Chaney丶")、[StarrySky](https://starrysky1024.com/ "StarrySky")、[kingwhylove](https://gitee.com/kingwhylove)、610
 ### 警告
 ***
 #### 武汉工程大学学生违纪处分办法（修订）    2016-08-27
