@@ -82,8 +82,7 @@ IvyHole：
 
 Chars：
 >Github： [Charsnows](https://github.com/Charsnows "Charsnows")  
->Facebook： [Chars](https://www.facebook.com/sakura.char.7 "Charsnows")  
->Twitter: [Chars](https://twitter.com/___Chiffon____)  
+>Facebook： [Chars](https://www.facebook.com/sakura.char.7 "Charsnows")   
 >资料捐赠邮箱： 2605241380@qq.com  
 
 如果你想匿名贡献，可以Email至以上联系人的邮箱。（注明"WIT捐献资料"即可）    
