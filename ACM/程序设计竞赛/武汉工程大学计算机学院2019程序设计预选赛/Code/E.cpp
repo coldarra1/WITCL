@@ -1,4 +1,4 @@
-# include <iostream>	// kcxz ?
+# include <iostream>	// ?
 # include <cstdio>
 
 bool vis[705];

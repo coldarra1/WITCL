@@ -1,3 +1,4 @@
+// O(n)
 # include <iostream>	// kcxz
 # include <cstdio>
  
