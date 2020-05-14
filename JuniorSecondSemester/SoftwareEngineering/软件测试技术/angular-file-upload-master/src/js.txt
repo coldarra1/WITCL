@@ -1,0 +1,33 @@
+
+//	var uploadFile = function(file){
+//	
+//			
+//		var formData = new FormData(form); 
+//		//formData.set(file);
+//		
+//		formData.append("userfile",files[0]);
+//		
+//		console.log(formData);
+//
+//		justep.Baas.sendRequest({
+//			"url" : "/justep/takeout",
+//			"action" : "actionName",
+//			"async" : false,
+//			"params" : formData,
+//			"success" : function(data) {
+//			}
+//		});
+		
+//		$.ajax({ 
+//	       contentType:"multipart/form-data", 
+//	       url:"/adata/adata/payment/PaymentAction/upload.menu?_pathName=/adata//payment.jsp", 
+//	       type:"POST", 
+//	       data:formData, 
+//	       dataType:"text", 
+//	       processData: false, // 告诉jQuery不要去处理发送的数据 
+//	       success: function(result){ 
+//	       alert(result); 
+//	       } 
+//		});
+//	};
+	

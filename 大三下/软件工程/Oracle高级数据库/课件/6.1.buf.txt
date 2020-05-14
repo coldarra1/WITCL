@@ -1,9 +1,0 @@
-DECLARE 
-  v_xh char(6);
-BEGIN
-  v_xh:='&x';
-  DBMS_OUTPUT.PUT_LINE(v_xh);
-  UPDATE xsb SET zxf=zxf+100 WHERE xh=v_xh;
-  DBMS_OUTPUT.PUT_LINE('ok');
-END; 
-/
