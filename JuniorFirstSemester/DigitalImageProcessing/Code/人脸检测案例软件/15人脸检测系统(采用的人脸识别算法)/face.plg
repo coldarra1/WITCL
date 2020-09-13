@@ -1,0 +1,41 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: face - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "D:\Users\Major\AppData\Local\Temp\RSPBF50.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/face.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\1\—Ó Á”®\_ÕºœÒ¥¶¿Ì\»À¡≥ºÏ≤‚œµÕ≥\faceView.cpp"
+]
+Creating command line "cl.exe @D:\Users\Major\AppData\Local\Temp\RSPBF50.tmp" 
+Creating temporary file "D:\Users\Major\AppData\Local\Temp\RSPBF51.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/face.pdb" /debug /machine:I386 /out:"Debug/face.exe" /pdbtype:sept 
+".\Debug\DIB.obj"
+".\Debug\face.obj"
+".\Debug\faceDoc.obj"
+".\Debug\faceView.obj"
+".\Debug\MainFrm.obj"
+".\Debug\StdAfx.obj"
+".\Debug\face.res"
+]
+Creating command line "link.exe @D:\Users\Major\AppData\Local\Temp\RSPBF51.tmp"
+<h3>Output Window</h3>
+Compiling...
+faceView.cpp
+Linking...
+Creating command line "bscmake.exe /nologo /o"Debug/face.bsc"  ".\Debug\StdAfx.sbr" ".\Debug\DIB.sbr" ".\Debug\face.sbr" ".\Debug\faceDoc.sbr" ".\Debug\faceView.sbr" ".\Debug\MainFrm.sbr""
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+face.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

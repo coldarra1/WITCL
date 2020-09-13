@@ -1,0 +1,93 @@
+C:\Documents and Settings\user\桌面\ConvertBmpToGray\ConvertBmpToGray\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.exe
+C:\Documents and Settings\user\桌面\ConvertBmpToGray\ConvertBmpToGray\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.pdb
+C:\Documents and Settings\user\桌面\ConvertBmpToGray\ConvertBmpToGray\ConvertBmpToGray\bin\Debug\ConvertBmpToGray.exe
+C:\Documents and Settings\user\桌面\ConvertBmpToGray\ConvertBmpToGray\ConvertBmpToGray\bin\Debug\ConvertBmpToGray.pdb
+C:\Documents and Settings\user\桌面\ConvertBmpToGray\ConvertBmpToGray\ConvertBmpToGray\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\user\桌面\ConvertBmpToGray\ConvertBmpToGray\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.Form1.resources
+C:\Documents and Settings\user\桌面\ConvertBmpToGray\ConvertBmpToGray\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.Properties.Resources.resources
+C:\Documents and Settings\user\桌面\ConvertBmpToGray\ConvertBmpToGray\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.csproj.GenerateResource.Cache
+C:\Documents and Settings\user\桌面\ConvertBmpToGray\ConvertBmpToGray\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.BwFilterH.resources
+C:\Documents and Settings\user\桌面\ConvertBmpToGray\ConvertBmpToGray\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.BwFilterL.resources
+C:\Documents and Settings\user\桌面\ConvertBmpToGray\ConvertBmpToGray\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.PerfectFilterH.resources
+C:\Documents and Settings\user\桌面\ConvertBmpToGray\ConvertBmpToGray\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.PerfectFilterL.resources
+C:\Documents and Settings\user\桌面\ConvertBmpToGray\ConvertBmpToGray\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.subForm1.resources
+C:\Documents and Settings\user\桌面\ConvertBmpToGray\ConvertBmpToGray\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.subForm2.resources
+C:\Documents and Settings\user\桌面\ConvertBmpToGray\ConvertBmpToGray\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.THFilter.resources
+C:\Documents and Settings\user\桌面\ConvertBmpToGray\ConvertBmpToGray\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.TLFilter.resources
+C:\Documents and Settings\user\桌面\ConvertBmpToGray\ConvertBmpToGray\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.ZHFilter.resources
+C:\Documents and Settings\user\桌面\ConvertBmpToGray\ConvertBmpToGray\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.ZLFilter.resources
+C:\Documents and Settings\user\桌面\job\+++bishe++++\毕设\ConvertBmpToGray\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.exe
+C:\Documents and Settings\user\桌面\job\+++bishe++++\毕设\ConvertBmpToGray\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.pdb
+C:\Documents and Settings\user\桌面\job\+++bishe++++\毕设\ConvertBmpToGray\ConvertBmpToGray\bin\Debug\ConvertBmpToGray.exe
+C:\Documents and Settings\user\桌面\job\+++bishe++++\毕设\ConvertBmpToGray\ConvertBmpToGray\bin\Debug\ConvertBmpToGray.pdb
+C:\Documents and Settings\user\桌面\job\+++bishe++++\毕设\ConvertBmpToGray\ConvertBmpToGray\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\user\桌面\job\+++bishe++++\毕设\ConvertBmpToGray\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.BwFilterH.resources
+C:\Documents and Settings\user\桌面\job\+++bishe++++\毕设\ConvertBmpToGray\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.BwFilterL.resources
+C:\Documents and Settings\user\桌面\job\+++bishe++++\毕设\ConvertBmpToGray\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.Form1.resources
+C:\Documents and Settings\user\桌面\job\+++bishe++++\毕设\ConvertBmpToGray\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.PerfectFilterH.resources
+C:\Documents and Settings\user\桌面\job\+++bishe++++\毕设\ConvertBmpToGray\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.PerfectFilterL.resources
+C:\Documents and Settings\user\桌面\job\+++bishe++++\毕设\ConvertBmpToGray\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.Properties.Resources.resources
+C:\Documents and Settings\user\桌面\job\+++bishe++++\毕设\ConvertBmpToGray\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.subForm1.resources
+C:\Documents and Settings\user\桌面\job\+++bishe++++\毕设\ConvertBmpToGray\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.subForm2.resources
+C:\Documents and Settings\user\桌面\job\+++bishe++++\毕设\ConvertBmpToGray\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.THFilter.resources
+C:\Documents and Settings\user\桌面\job\+++bishe++++\毕设\ConvertBmpToGray\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.TLFilter.resources
+C:\Documents and Settings\user\桌面\job\+++bishe++++\毕设\ConvertBmpToGray\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.ZHFilter.resources
+C:\Documents and Settings\user\桌面\job\+++bishe++++\毕设\ConvertBmpToGray\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.ZLFilter.resources
+C:\Documents and Settings\user\桌面\job\+++bishe++++\毕设\ConvertBmpToGray\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.csproj.GenerateResource.Cache
+F:\study\master\c#图象处理\刘丽丽\程序\bishe\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.exe
+F:\study\master\c#图象处理\刘丽丽\程序\bishe\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.pdb
+F:\study\master\c#图象处理\刘丽丽\程序\bishe\ConvertBmpToGray\bin\Debug\ConvertBmpToGray.exe
+F:\study\master\c#图象处理\刘丽丽\程序\bishe\ConvertBmpToGray\bin\Debug\ConvertBmpToGray.pdb
+F:\study\master\c#图象处理\刘丽丽\程序\bishe\ConvertBmpToGray\obj\Debug\ResolveAssemblyReference.cache
+F:\study\master\c#图象处理\刘丽丽\程序\bishe\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.BwFilterH.resources
+F:\study\master\c#图象处理\刘丽丽\程序\bishe\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.BwFilterL.resources
+F:\study\master\c#图象处理\刘丽丽\程序\bishe\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.Form1.resources
+F:\study\master\c#图象处理\刘丽丽\程序\bishe\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.PerfectFilterH.resources
+F:\study\master\c#图象处理\刘丽丽\程序\bishe\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.PerfectFilterL.resources
+F:\study\master\c#图象处理\刘丽丽\程序\bishe\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.Properties.Resources.resources
+F:\study\master\c#图象处理\刘丽丽\程序\bishe\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.subForm1.resources
+F:\study\master\c#图象处理\刘丽丽\程序\bishe\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.subForm2.resources
+F:\study\master\c#图象处理\刘丽丽\程序\bishe\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.THFilter.resources
+F:\study\master\c#图象处理\刘丽丽\程序\bishe\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.TLFilter.resources
+F:\study\master\c#图象处理\刘丽丽\程序\bishe\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.ZHFilter.resources
+F:\study\master\c#图象处理\刘丽丽\程序\bishe\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.ZLFilter.resources
+F:\study\master\c#图象处理\刘丽丽\程序\bishe\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.csproj.GenerateResource.Cache
+F:\study\master\c#图象处理\刘丽丽 9 12\程序\bishe\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.exe
+F:\study\master\c#图象处理\刘丽丽 9 12\程序\bishe\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.pdb
+F:\study\master\c#图象处理\刘丽丽 9 12\程序\bishe\ConvertBmpToGray\bin\Debug\ConvertBmpToGray.exe
+F:\study\master\c#图象处理\刘丽丽 9 12\程序\bishe\ConvertBmpToGray\bin\Debug\ConvertBmpToGray.pdb
+F:\study\master\c#图象处理\刘丽丽 9 12\程序\bishe\ConvertBmpToGray\obj\Debug\ResolveAssemblyReference.cache
+F:\study\master\c#图象处理\刘丽丽 9 12\程序\bishe\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.BwFilterH.resources
+F:\study\master\c#图象处理\刘丽丽 9 12\程序\bishe\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.BwFilterL.resources
+F:\study\master\c#图象处理\刘丽丽 9 12\程序\bishe\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.Form1.resources
+F:\study\master\c#图象处理\刘丽丽 9 12\程序\bishe\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.PerfectFilterH.resources
+F:\study\master\c#图象处理\刘丽丽 9 12\程序\bishe\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.PerfectFilterL.resources
+F:\study\master\c#图象处理\刘丽丽 9 12\程序\bishe\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.Properties.Resources.resources
+F:\study\master\c#图象处理\刘丽丽 9 12\程序\bishe\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.subForm1.resources
+F:\study\master\c#图象处理\刘丽丽 9 12\程序\bishe\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.subForm2.resources
+F:\study\master\c#图象处理\刘丽丽 9 12\程序\bishe\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.THFilter.resources
+F:\study\master\c#图象处理\刘丽丽 9 12\程序\bishe\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.TLFilter.resources
+F:\study\master\c#图象处理\刘丽丽 9 12\程序\bishe\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.ZHFilter.resources
+F:\study\master\c#图象处理\刘丽丽 9 12\程序\bishe\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.ZLFilter.resources
+F:\study\master\c#图象处理\刘丽丽 9 12\程序\bishe\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.csproj.GenerateResource.Cache
+F:\study\master\c#图象处理\汇总\text\bishe\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.exe
+F:\study\master\c#图象处理\汇总\text\bishe\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.pdb
+F:\study\master\c#图象处理\汇总\text\bishe\ConvertBmpToGray\bin\Debug\ConvertBmpToGray.exe
+F:\study\master\c#图象处理\汇总\text\bishe\ConvertBmpToGray\bin\Debug\ConvertBmpToGray.pdb
+F:\study\master\c#图象处理\汇总\text\bishe\ConvertBmpToGray\obj\Debug\ResolveAssemblyReference.cache
+F:\study\master\c#图象处理\汇总\text\bishe\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.BwFilterH.resources
+F:\study\master\c#图象处理\汇总\text\bishe\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.BwFilterL.resources
+F:\study\master\c#图象处理\汇总\text\bishe\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.Form1.resources
+F:\study\master\c#图象处理\汇总\text\bishe\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.PerfectFilterH.resources
+F:\study\master\c#图象处理\汇总\text\bishe\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.PerfectFilterL.resources
+F:\study\master\c#图象处理\汇总\text\bishe\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.Properties.Resources.resources
+F:\study\master\c#图象处理\汇总\text\bishe\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.subForm1.resources
+F:\study\master\c#图象处理\汇总\text\bishe\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.subForm2.resources
+F:\study\master\c#图象处理\汇总\text\bishe\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.THFilter.resources
+F:\study\master\c#图象处理\汇总\text\bishe\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.TLFilter.resources
+F:\study\master\c#图象处理\汇总\text\bishe\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.ZHFilter.resources
+F:\study\master\c#图象处理\汇总\text\bishe\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.ZLFilter.resources
+F:\study\master\c#图象处理\汇总\text\bishe\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.csproj.GenerateResource.Cache
+F:\study\master\c#图象处理\汇总\text\bishe\ConvertBmpToGray\obj\Debug\WindowsApplication1.TuXiangPingYi.resources
+F:\study\master\c#图象处理\汇总\tuxiangchuli\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.exe
+F:\study\master\c#图象处理\汇总\tuxiangchuli\ConvertBmpToGray\obj\Debug\ConvertBmpToGray.pdb

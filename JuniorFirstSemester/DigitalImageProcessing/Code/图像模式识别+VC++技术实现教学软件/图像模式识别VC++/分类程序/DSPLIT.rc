@@ -1,0 +1,730 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\DSPLIT.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\DSPLIT.ico"
+IDR_DSPLITTYPE          ICON    DISCARDABLE     "res\\DSPLITDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_BUTTON_OPEN
+    BUTTON      ID_BUTTONDISPLAY
+    BUTTON      ID_BUTTON_CLEAR
+    BUTTON      ID_BUTTON_SAVE
+    BUTTON      ID_BUTTON_LMSEifClassified
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "清除并重写检验样品(&N)\tCtrl+N", ID_BUTTON_CLEAR
+        MENUITEM "打开256色位图(&O)...\tCtrl+O", ID_BUTTON_OPEN
+        MENUITEM "显示打开图像",                ID_BUTTONDISPLAY
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                    ID_APP_EXIT
+    END
+    POPUP "训练样品设计"
+    BEGIN
+        MENUITEM "保存样品到训练集首位(&S)\tCtrl+S", ID_BUTTON_SAVE
+        MENUITEM "设计训练样品库",              ID_MENU_DESIGN
+        MENUITEM "验证可分性",                  ID_MENU_IFCLASSIFICATION
+    END
+    POPUP "模板匹配分类器"
+    BEGIN
+        MENUITEM "最邻近模板匹配法",            ID_MENU_LEASTDISTANCE
+    END
+    POPUP "Bayes分类器"
+    BEGIN
+        MENUITEM "使用二值数据的Bayes方法",     ID_MENU_BAYES_ERZHI
+        MENUITEM "最小错误概率的Bayes方法",     ID_MENU_BAYES_LEASTERROR
+        MENUITEM "最小风险的Bayes方法",         ID_MENU_BAYES_LEASTRISK
+    END
+    POPUP "线性函数分类法"
+    BEGIN
+        MENUITEM "Fisher算法",                  ID_MENU_FISHER
+        MENUITEM "奖惩算法",                    ID_MENU_JIANGCHENG
+        MENUITEM "增量校正算法",                ID_MENU_ZENGLIANGJIAOZHENG
+        MENUITEM "LMSE算法",                    ID_MENU_LMSE
+    END
+    POPUP "非线性分类法"
+    BEGIN
+        MENUITEM "势函数法",                    ID_MENU_SHIHANSHU
+    END
+    POPUP "神经网络分类法"
+    BEGIN
+        MENUITEM "神经网络训练",                ID_BP_TRAIN
+        MENUITEM "神经网络建立之后输出权值",    ID_MENU_BPQUANZHI
+        MENUITEM "测试与比较",                  ID_BP_TEST
+        MENUITEM "神经网络识别",                ID_BP_CLASSIFY
+    END
+    POPUP "帮助"
+    BEGIN
+        MENUITEM "使用说明",                    ID_HELP
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 DSPLIT"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "DSPLIT 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2004",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_DIALOG1 DIALOG DISCARDABLE  0, 0, 257, 163
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "样品库"
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "退出",IDOK,191,144,41,12
+    PUSHBUTTON      "新增样品",IDC_BUTTON_ADDNEW,116,18,50,12
+    PUSHBUTTON      "保存样品",IDC_BUTTON_SAVE,176,18,50,12,WS_DISABLED
+    COMBOBOX        IDC_COMBO1,211,36,28,30,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "选择样品序号可对单个样品操作",IDC_STATIC,91,35,113,13
+    GROUPBOX        "操作",IDC_STATIC,85,7,165,133
+    GROUPBOX        "数字  数字样品数",IDC_STATIC,7,7,70,144
+    CONTROL         "1",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,9,
+                    22,20,10
+    CONTROL         "2",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,9,33,20,10
+    CONTROL         "3",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,9,44,20,10
+    CONTROL         "4",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,9,55,20,10
+    CONTROL         "5",IDC_RADIO5,"Button",BS_AUTORADIOBUTTON,9,66,20,10
+    CONTROL         "6",IDC_RADIO6,"Button",BS_AUTORADIOBUTTON,9,77,20,10
+    CONTROL         "7",IDC_RADIO7,"Button",BS_AUTORADIOBUTTON,9,88,20,10
+    CONTROL         "8",IDC_RADIO8,"Button",BS_AUTORADIOBUTTON,9,99,20,10
+    CONTROL         "9",IDC_RADIO9,"Button",BS_AUTORADIOBUTTON,9,110,20,10
+    CONTROL         "0",IDC_RADIO10,"Button",BS_AUTORADIOBUTTON,9,121,20,10
+    EDITTEXT        IDC_EDIT1,40,22,32,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT_TOTAL,40,133,32,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT2,40,33,32,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT3,40,44,32,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT4,40,55,32,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT5,40,66,32,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT6,40,77,32,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT7,40,88,32,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT8,40,99,32,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT9,40,110,32,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT10,40,121,32,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER | NOT WS_BORDER
+    LTEXT           "总共",IDC_STATIC,9,132,17,8
+    PUSHBUTTON      "修改",IDC_BUTTON_UPDATE,95,58,38,11
+    PUSHBUTTON      "删除",IDC_BUTTON_DELETE,95,77,38,11
+    PUSHBUTTON      "前一个",IDC_BUTTON_PRIOR,95,96,38,11
+    PUSHBUTTON      "后一个",IDC_BUTTON_NEXT,95,115,38,11
+    EDITTEXT        IDC_EDIT_NUM0,147,57,14,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_NUM1,165,57,14,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_NUM2,183,57,14,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_NUM3,201,57,14,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_NUM4,219,57,14,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_NUM5,147,74,14,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_NUM6,165,74,14,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_NUM7,183,74,14,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_NUM8,201,74,14,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_NUM9,219,74,14,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_NUM10,147,91,14,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_NUM11,165,91,14,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_NUM12,183,91,14,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_NUM13,201,91,14,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_NUM14,219,91,14,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_NUM15,147,108,14,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | ES_NUMBER
+    EDITTEXT        IDC_EDIT_NUM16,165,108,14,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | ES_NUMBER
+    EDITTEXT        IDC_EDIT_NUM17,183,108,14,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | ES_NUMBER
+    EDITTEXT        IDC_EDIT_NUM18,201,108,14,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | ES_NUMBER
+    EDITTEXT        IDC_EDIT_NUM19,219,108,14,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | ES_NUMBER
+    EDITTEXT        IDC_EDIT_NUM20,147,125,14,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | ES_NUMBER
+    EDITTEXT        IDC_EDIT_NUM21,165,125,14,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | ES_NUMBER
+    EDITTEXT        IDC_EDIT_NUM22,183,125,14,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | ES_NUMBER
+    EDITTEXT        IDC_EDIT_NUM23,201,125,14,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | ES_NUMBER
+    EDITTEXT        IDC_EDIT_NUM24,219,125,14,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | ES_NUMBER
+END
+
+IDD_DIALOG2 DIALOG DISCARDABLE  0, 0, 165, 57
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "保存为样品"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,30,36,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,100,36,50,14
+    LTEXT           "请输入该模板对应的数字：",IDC_STATIC,7,18,97,8
+    EDITTEXT        IDC_EDIT1,106,17,40,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG3 DIALOG DISCARDABLE  0, 0, 187, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "验证可分性"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,14,34,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,117,34,50,14
+    EDITTEXT        IDC_EDIT1,94,16,16,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,140,17,16,14,ES_AUTOHSCROLL
+    LTEXT           "请输入两个数字：",IDC_STATIC,23,17,65,8
+    PUSHBUTTON      "<",IDC_BUTTON1,110,15,10,9
+    PUSHBUTTON      ">",IDC_BUTTON2,110,23,10,9
+    PUSHBUTTON      "<",IDC_BUTTON3,156,15,10,9
+    PUSHBUTTON      ">",IDC_BUTTON4,156,24,10,9
+END
+
+IDD_DIALOG4 DIALOG DISCARDABLE  0, 0, 284, 201
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "各次迭代权值"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_EDIT1,7,7,270,187,ES_MULTILINE | ES_NOHIDESEL | 
+                    ES_OEMCONVERT | ES_READONLY | WS_VSCROLL
+END
+
+IDD_DIALOG5 DIALOG DISCARDABLE  0, 0, 262, 219
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "损失表"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,70,198,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,171,198,50,14
+    EDITTEXT        IDC_EDIT1,38,28,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,53,28,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,68,28,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,83,28,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,98,28,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT6,113,28,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT7,128,28,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT8,143,28,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT9,158,28,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT10,173,28,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT11,38,44,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT12,53,44,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT13,68,44,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT14,83,44,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT15,98,44,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT16,113,44,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT17,128,44,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT18,143,44,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT19,158,44,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT20,173,44,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT21,38,60,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT22,53,60,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT23,68,60,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT24,83,60,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT25,98,60,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT26,113,60,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT27,128,60,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT28,143,60,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT29,158,60,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT30,173,60,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT31,38,76,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT32,53,76,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT33,68,76,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT34,83,76,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT35,98,76,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT36,113,76,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT37,128,76,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT38,143,76,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT39,158,76,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT40,173,76,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT41,38,92,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT42,53,92,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT43,68,92,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT44,83,92,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT45,98,92,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT46,113,92,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT47,128,92,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT48,143,92,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT49,158,92,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT50,173,92,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT51,38,108,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT52,53,108,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT53,68,108,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT54,83,108,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT55,98,108,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT56,113,108,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT57,128,108,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT58,143,108,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT59,158,108,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT60,173,108,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT61,38,124,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT62,53,124,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT63,68,124,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT64,83,124,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT65,98,124,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT66,113,124,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT67,128,124,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT68,143,124,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT69,158,124,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT70,173,124,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT71,38,140,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT72,53,140,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT73,68,140,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT74,83,140,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT75,98,140,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT76,113,140,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT77,128,140,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT78,143,140,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT79,158,140,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT80,173,140,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT81,38,156,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT82,53,156,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT83,68,156,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT84,83,156,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT85,98,156,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT86,113,156,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT87,128,156,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT88,143,156,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT89,158,156,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT90,173,156,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT91,38,172,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT92,53,172,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT93,68,172,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT94,83,172,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT95,98,172,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT96,113,172,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT97,128,172,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT98,143,172,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT99,158,172,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT100,173,172,12,12,ES_AUTOHSCROLL
+    LTEXT           "实际类别",IDC_STATIC,92,6,50,10
+    LTEXT           "决策",IDC_STATIC,11,87,8,47
+    LTEXT           "w0",IDC_STATIC,39,17,10,8
+    LTEXT           "w1",IDC_STATIC,53,17,10,8
+    LTEXT           "w2",IDC_STATIC,70,17,10,8
+    LTEXT           "w3",IDC_STATIC,83,17,10,8
+    LTEXT           "w4",IDC_STATIC,100,17,10,8
+    LTEXT           "w5",IDC_STATIC,114,17,10,8
+    LTEXT           "w6",IDC_STATIC,129,17,10,8
+    LTEXT           "w7",IDC_STATIC,144,17,10,8
+    LTEXT           "w8",IDC_STATIC,158,17,10,8
+    LTEXT           "w9",IDC_STATIC,173,17,10,8
+    LTEXT           "a0",IDC_STATIC,25,30,9,8
+    LTEXT           "a1",IDC_STATIC,25,48,9,8
+    LTEXT           "a2",IDC_STATIC,25,63,9,8
+    LTEXT           "a3",IDC_STATIC,25,79,9,8
+    LTEXT           "a4",IDC_STATIC,25,94,9,8
+    LTEXT           "a5",IDC_STATIC,25,111,9,8
+    LTEXT           "a6",IDC_STATIC,25,128,9,8
+    LTEXT           "a7",IDC_STATIC,25,144,9,8
+    LTEXT           "a8",IDC_STATIC,25,161,9,8
+    LTEXT           "a9",IDC_STATIC,25,175,9,8
+    LTEXT           "总风险值",IDC_STATIC,197,16,33,8
+    EDITTEXT        IDC_EDIT102,191,44,53,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT103,191,61,53,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT104,191,76,53,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT105,191,93,53,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT106,191,109,53,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT107,191,125,53,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT108,191,141,53,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT109,191,158,53,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT110,191,173,53,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT101,191,29,53,12,ES_AUTOHSCROLL | ES_READONLY
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "DSPLIT Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "DSPLIT\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2004\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "DSPLIT.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "DSPLIT 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 250
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 156
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 158
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 50
+    END
+
+    IDD_DIALOG3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_DIALOG4, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 277
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 194
+    END
+
+    IDD_DIALOG5, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 255
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 212
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR1             CURSOR  DISCARDABLE     "res\\cursor1.cur"
+IDC_CURSOR2             CURSOR  DISCARDABLE     "res\\cursor2.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "DSPLIT\n\nDSPLIT\n\n\nDSPLIT.Document\nDSPLIT Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "DSPLIT"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "扩展名"
+    ID_INDICATOR_CAPS       "大写"
+    ID_INDICATOR_NUM        "数字"
+    ID_INDICATOR_SCRL       "滚动"
+    ID_INDICATOR_OVR        "改写"
+    ID_INDICATOR_REC        "记录"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "建立新文档\n新建"
+    ID_FILE_OPEN            "打开一个现有文档\n打开"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "将活动文档以一个新文件名保存\n另存为"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "显示程序信息，版本号和版权\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "打开该文档"
+    ID_FILE_MRU_FILE2       "打开该文档"
+    ID_FILE_MRU_FILE3       "打开该文档"
+    ID_FILE_MRU_FILE4       "打开该文档"
+    ID_FILE_MRU_FILE5       "打开该文档"
+    ID_FILE_MRU_FILE6       "打开该文档"
+    ID_FILE_MRU_FILE7       "打开该文档"
+    ID_FILE_MRU_FILE8       "打开该文档"
+    ID_FILE_MRU_FILE9       "打开该文档"
+    ID_FILE_MRU_FILE10      "打开该文档"
+    ID_FILE_MRU_FILE11      "打开该文档"
+    ID_FILE_MRU_FILE12      "打开该文档"
+    ID_FILE_MRU_FILE13      "打开该文档"
+    ID_FILE_MRU_FILE14      "打开该文档"
+    ID_FILE_MRU_FILE15      "打开该文档"
+    ID_FILE_MRU_FILE16      "打开该文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回前一个窗格\n前一窗格"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "将活动的窗口分隔成窗格\n分隔"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "删除被选对象\n删除"
+    ID_EDIT_CLEAR_ALL       "全部删除\n全部删除"
+    ID_EDIT_COPY            "复制被选对象并将其置于剪贴板上\n复制"
+    ID_EDIT_CUT             "剪切被选对象并将其置于剪贴板上\n剪切"
+    ID_EDIT_FIND            "查找指定的正文\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一步操作\n重复"
+    ID_EDIT_REPLACE         "用不同的正文替换指定的正文\n替换"
+    ID_EDIT_SELECT_ALL      "选择整个文档\n选择全部"
+    ID_EDIT_UNDO            "撤消最后一步操作\n撤消"
+    ID_EDIT_REDO            "重新执行先前已撤消的操作\n重新执行"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "显示或隐藏工具栏\n显隐工具栏"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n显隐状态栏"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "改变窗口大小"
+    AFX_IDS_SCMOVE          "改变窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小成图标"
+    AFX_IDS_SCMAXIMIZE      "把窗口放大到最大尺寸"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到先前的文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动的窗口并提示保存所有文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "把窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务表"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_BUTTON_CLEAR         "清除并重写检验样品\n清除并重写检验样品"
+    ID_BUTTON32772          "保存为模板"
+    ID_BUTTON_SAVE          "保存为样品\n保存为样品"
+    ID_BUTTON_LMSEifClassified "验证可分性\n验证可分性"
+    ID_BUTTON_OPEN          "打开一幅图像\n打开一幅图像"
+    ID_BUTTONDISPLAY        "显示打开图像\n显示打开图像"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\DSPLIT.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

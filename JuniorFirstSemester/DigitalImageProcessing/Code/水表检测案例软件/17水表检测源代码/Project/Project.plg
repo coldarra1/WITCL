@@ -1,0 +1,34 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Project - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\kun\AppData\Local\Temp\RSPF50C.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/Project.pdb" /debug /machine:I386 /out:"Debug/Project.exe" /pdbtype:sept 
+".\Debug\BmpBaseInfo.obj"
+".\Debug\ChildFrm.obj"
+".\Debug\HistGramDoc.obj"
+".\Debug\HistGramView.obj"
+".\Debug\MainFrm.obj"
+".\Debug\Project.obj"
+".\Debug\ProjectDoc.obj"
+".\Debug\ProjectView.obj"
+".\Debug\ResultDlg.obj"
+".\Debug\StdAfx.obj"
+".\Debug\Project.res"
+]
+Creating command line "link.exe @C:\Users\kun\AppData\Local\Temp\RSPF50C.tmp"
+<h3>Output Window</h3>
+Linking...
+
+
+
+<h3>Results</h3>
+Project.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,372 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CB9C49C2-156C-430B-8264-4A8134E92471}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ConvertBmpToGray</RootNamespace>
+    <AssemblyName>ConvertBmpToGray</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BeiJingTu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BeiJingTu.Designer.cs">
+      <DependentUpon>BeiJingTu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BwFilterH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BwFilterH.Designer.cs">
+      <DependentUpon>BwFilterH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BwFilterL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BwFilterL.Designer.cs">
+      <DependentUpon>BwFilterL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CImage.cs" />
+    <Compile Include="Complex.cs" />
+    <Compile Include="ComplexArray.cs" />
+    <Compile Include="ComplexF.cs" />
+    <Compile Include="ComplexMath.cs" />
+    <Compile Include="ComplexStats.cs" />
+    <Compile Include="Error.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Error.Designer.cs">
+      <DependentUpon>Error.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fourier.cs" />
+    <Compile Include="FourierDirection.cs" />
+    <Compile Include="分割与测量\MenXian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="分割与测量\MenXian.Designer.cs">
+      <DependentUpon>MenXian.cs</DependentUpon>
+    </Compile>
+    <Compile Include="平滑处理\ChaoXian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="平滑处理\ChaoXian.Designer.cs">
+      <DependentUpon>ChaoXian.cs</DependentUpon>
+    </Compile>
+    <Compile Include="平滑处理\nn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="平滑处理\nn.Designer.cs">
+      <DependentUpon>nn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="平滑处理\nnZhongZhi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="平滑处理\nnZhongZhi.Designer.cs">
+      <DependentUpon>nnZhongZhi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="平滑处理\nnZuiDa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="平滑处理\nnZuiDa.Designer.cs">
+      <DependentUpon>nnZuiDa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="平滑处理\ShiZi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="平滑处理\ShiZi.Designer.cs">
+      <DependentUpon>ShiZi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="灰度变换\ChuangKouBianHuan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="灰度变换\ChuangKouBianHuan.Designer.cs">
+      <DependentUpon>ChuangKouBianHuan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="灰度变换\FenDuanXianXing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="灰度变换\FenDuanXianXing.Designer.cs">
+      <DependentUpon>FenDuanXianXing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="灰度变换\GuDing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="灰度变换\GuDing.Designer.cs">
+      <DependentUpon>GuDing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PerfectFilterH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PerfectFilterH.Designer.cs">
+      <DependentUpon>PerfectFilterH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PerfectFilterL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PerfectFilterL.Designer.cs">
+      <DependentUpon>PerfectFilterL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BeiJingTu.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BeiJingTu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BwFilterH.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BwFilterH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BwFilterL.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BwFilterL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Error.resx">
+      <DependentUpon>Error.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\ConvertBmpToGray.BwFilterH.resources" />
+    <EmbeddedResource Include="obj\Debug\ConvertBmpToGray.BwFilterL.resources" />
+    <EmbeddedResource Include="obj\Debug\ConvertBmpToGray.Form1.resources" />
+    <EmbeddedResource Include="obj\Debug\ConvertBmpToGray.PerfectFilterH.resources" />
+    <EmbeddedResource Include="obj\Debug\ConvertBmpToGray.PerfectFilterL.resources" />
+    <EmbeddedResource Include="obj\Debug\ConvertBmpToGray.Properties.Resources.resources" />
+    <EmbeddedResource Include="obj\Debug\ConvertBmpToGray.subForm1.resources" />
+    <EmbeddedResource Include="obj\Debug\ConvertBmpToGray.subForm2.resources" />
+    <EmbeddedResource Include="obj\Debug\ConvertBmpToGray.THFilter.resources" />
+    <EmbeddedResource Include="obj\Debug\ConvertBmpToGray.TLFilter.resources" />
+    <EmbeddedResource Include="obj\Debug\ConvertBmpToGray.ZHFilter.resources" />
+    <EmbeddedResource Include="obj\Debug\ConvertBmpToGray.ZLFilter.resources" />
+    <EmbeddedResource Include="obj\Debug\WindowsApplication1.ChaoXian.resources" />
+    <EmbeddedResource Include="obj\Debug\WindowsApplication1.ChuangKouBianHuan.resources" />
+    <EmbeddedResource Include="obj\Debug\WindowsApplication1.Error.resources" />
+    <EmbeddedResource Include="obj\Debug\WindowsApplication1.FenDuanXianXing.resources" />
+    <EmbeddedResource Include="obj\Debug\WindowsApplication1.GuDing.resources" />
+    <EmbeddedResource Include="obj\Debug\WindowsApplication1.MenXian.resources" />
+    <EmbeddedResource Include="obj\Debug\WindowsApplication1.nn.resources" />
+    <EmbeddedResource Include="obj\Debug\WindowsApplication1.nnZhongZhi.resources" />
+    <EmbeddedResource Include="obj\Debug\WindowsApplication1.nnZuiDa.resources" />
+    <EmbeddedResource Include="obj\Debug\WindowsApplication1.ShiZi.resources" />
+    <EmbeddedResource Include="obj\Debug\WindowsApplication1.ShuangYu.resources" />
+    <EmbeddedResource Include="obj\Debug\WindowsApplication1.SuoFang.resources" />
+    <EmbeddedResource Include="obj\Debug\WindowsApplication1.TuXiangPingYi.resources" />
+    <EmbeddedResource Include="分割与测量\MenXian.resx">
+      <DependentUpon>MenXian.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="平滑处理\ChaoXian.resx">
+      <DependentUpon>ChaoXian.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="平滑处理\nn.resx">
+      <DependentUpon>nn.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="平滑处理\nnZhongZhi.resx">
+      <DependentUpon>nnZhongZhi.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="平滑处理\nnZuiDa.resx">
+      <DependentUpon>nnZuiDa.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="平滑处理\ShiZi.resx">
+      <DependentUpon>ShiZi.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="灰度变换\ChuangKouBianHuan.resx">
+      <DependentUpon>ChuangKouBianHuan.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="灰度变换\FenDuanXianXing.resx">
+      <DependentUpon>FenDuanXianXing.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="灰度变换\GuDing.resx">
+      <DependentUpon>GuDing.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PerfectFilterH.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PerfectFilterH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PerfectFilterL.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PerfectFilterL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="subForm1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>subForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="subForm2.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>subForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="几何变换\SuoFang.resx">
+      <DependentUpon>SuoFang.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="THFilter.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>THFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TLFilter.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TLFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="几何变换\TuXiangPingYi.resx">
+      <DependentUpon>TuXiangPingYi.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZHFilter.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ZHFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZLFilter.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ZLFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="灰度变换\ShuangYu.resx">
+      <DependentUpon>ShuangYu.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="obj\Debug\ConvertBmpToGray.csproj.GenerateResource.Cache" />
+    <None Include="obj\Debug\TuXiangChuLi.csproj.GenerateResource.Cache" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="subForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="subForm1.Designer.cs">
+      <DependentUpon>subForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="subForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="subForm2.Designer.cs">
+      <DependentUpon>subForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="几何变换\SuoFang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="几何变换\SuoFang.Designer.cs">
+      <DependentUpon>SuoFang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="THFilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="THFilter.Designer.cs">
+      <DependentUpon>THFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TLFilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TLFilter.Designer.cs">
+      <DependentUpon>TLFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="几何变换\TuXiangPingYi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="几何变换\TuXiangPingYi.Designer.cs">
+      <DependentUpon>TuXiangPingYi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ZHFilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ZHFilter.Designer.cs">
+      <DependentUpon>ZHFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ZLFilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ZLFilter.Designer.cs">
+      <DependentUpon>ZLFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="灰度变换\ShuangYu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="灰度变换\ShuangYu.Designer.cs">
+      <DependentUpon>ShuangYu.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="baocun.bmp" />
+    <Content Include="bin\Debug\ConvertBmpToGray.exe" />
+    <Content Include="bin\Debug\ConvertBmpToGray.pdb" />
+    <Content Include="bin\Debug\ConvertBmpToGray.vshost.exe" />
+    <Content Include="dakai.bmp" />
+    <Content Include="obj\ConvertBmpToGray.csproj.FileList.txt" />
+    <Content Include="obj\ConvertBmpToGray.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\ConvertBmpToGray.exe" />
+    <Content Include="obj\Debug\ConvertBmpToGray.pdb" />
+    <Content Include="obj\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
+    <Content Include="obj\TuXiangChuLi.csproj.FileListAbsolute.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\Debug\Refactor\" />
+    <Folder Include="图像的变换域\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

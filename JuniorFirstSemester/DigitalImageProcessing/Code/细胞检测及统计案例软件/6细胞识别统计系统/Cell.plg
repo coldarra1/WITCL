@@ -1,0 +1,48 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Cell - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSPEBF5.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/Cell.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"d:\Users\Administrator\Desktop\图像\细胞识别统计系统\Cell.cpp"
+"d:\Users\Administrator\Desktop\图像\细胞识别统计系统\CellView.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSPEBF5.tmp" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSPEC05.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/Cell.pdb" /debug /machine:I386 /out:"Debug/Cell.exe" /pdbtype:sept 
+".\Debug\Cell.obj"
+".\Debug\CellDoc.obj"
+".\Debug\CellView.obj"
+".\Debug\HistogramDlg.obj"
+".\Debug\HSI.obj"
+".\Debug\HSIDlg.obj"
+".\Debug\MainFrm.obj"
+".\Debug\Set.obj"
+".\Debug\StdAfx.obj"
+".\Debug\Cell.res"
+]
+Creating command line "link.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSPEC05.tmp"
+<h3>Output Window</h3>
+Compiling...
+Cell.cpp
+Generating Code...
+Skipping... (no relevant changes detected)
+CellView.cpp
+Linking...
+Creating command line "bscmake.exe /nologo /o"Debug/Cell.bsc"  ".\Debug\StdAfx.sbr" ".\Debug\Cell.sbr" ".\Debug\CellDoc.sbr" ".\Debug\CellView.sbr" ".\Debug\HistogramDlg.sbr" ".\Debug\HSI.sbr" ".\Debug\HSIDlg.sbr" ".\Debug\MainFrm.sbr" ".\Debug\Set.sbr""
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+Cell.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

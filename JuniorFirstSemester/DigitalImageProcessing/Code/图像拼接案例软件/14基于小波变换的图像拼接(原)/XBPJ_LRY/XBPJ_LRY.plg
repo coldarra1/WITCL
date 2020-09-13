@@ -1,0 +1,63 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: XBPJ_LRY - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/XBPJ_LRY.res" /d "_DEBUG" /d "_AFXDLL" "H:\611\基于小波变换的图像拼接(原)\XBPJ_LRY\XBPJ_LRY.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP6E.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/XBPJ_LRY.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"H:\611\基于小波变换的图像拼接(原)\XBPJ_LRY\CDib.cpp"
+"H:\611\基于小波变换的图像拼接(原)\XBPJ_LRY\MainFrm.cpp"
+"H:\611\基于小波变换的图像拼接(原)\XBPJ_LRY\Wavelet.cpp"
+"H:\611\基于小波变换的图像拼接(原)\XBPJ_LRY\WaveletPJDlg.cpp"
+"H:\611\基于小波变换的图像拼接(原)\XBPJ_LRY\XBPJ_LRY.cpp"
+"H:\611\基于小波变换的图像拼接(原)\XBPJ_LRY\XBPJ_LRYDoc.cpp"
+"H:\611\基于小波变换的图像拼接(原)\XBPJ_LRY\XBPJ_LRYView.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP6E.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP6F.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/XBPJ_LRY.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"H:\611\基于小波变换的图像拼接(原)\XBPJ_LRY\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP6F.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP70.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/XBPJ_LRY.pdb" /debug /machine:I386 /out:"Debug/XBPJ_LRY.exe" /pdbtype:sept 
+".\Debug\CDib.obj"
+".\Debug\MainFrm.obj"
+".\Debug\StdAfx.obj"
+".\Debug\Wavelet.obj"
+".\Debug\WaveletPJDlg.obj"
+".\Debug\XBPJ_LRY.obj"
+".\Debug\XBPJ_LRYDoc.obj"
+".\Debug\XBPJ_LRYView.obj"
+".\Debug\XBPJ_LRY.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP70.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+CDib.cpp
+MainFrm.cpp
+Wavelet.cpp
+WaveletPJDlg.cpp
+XBPJ_LRY.cpp
+XBPJ_LRYDoc.cpp
+XBPJ_LRYView.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+XBPJ_LRY.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
