@@ -1,0 +1,29 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Cdib - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSPBF0.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/Cdib.pdb" /debug /machine:I386 /out:"Debug/Cdib.exe" /pdbtype:sept 
+".\Debug\Cdib.obj"
+]
+Creating command line "link.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSPBF0.tmp"
+<h3>Output Window</h3>
+Linking...
+nafxcwd.lib(thrdcore.obj) : error LNK2001: unresolved external symbol __endthreadex
+nafxcwd.lib(thrdcore.obj) : error LNK2001: unresolved external symbol __beginthreadex
+libcd.lib(crt0.obj) : error LNK2001: unresolved external symbol _main
+Debug/Cdib.exe : fatal error LNK1120: 3 unresolved externals
+Error executing link.exe.
+
+
+
+<h3>Results</h3>
+Cdib.exe - 4 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

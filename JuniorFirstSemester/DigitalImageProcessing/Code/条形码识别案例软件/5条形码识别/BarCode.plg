@@ -1,0 +1,32 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: BarCode - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/BarCode.res" /d "NDEBUG" /d "_AFXDLL" "E:\条形码\BarCode(比较好的)\BarCode.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP33.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/BarCode.pdb" /machine:I386 /out:"Release/BarCode.exe" 
+".\Release\BarCode.obj"
+".\Release\BarCodeDoc.obj"
+".\Release\BarCodeView.obj"
+".\Release\DLGBW.obj"
+".\Release\MainFrm.obj"
+".\Release\StdAfx.obj"
+".\Release\BarCode.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP33.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Linking...
+
+
+
+<h3>Results</h3>
+BarCode.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

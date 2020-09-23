@@ -1,0 +1,773 @@
+function varargout = DIP_matlab(varargin)
+% DIP_MATLAB M-file for DIP_matlab.fig
+%      DIP_MATLAB, by itself, creates a new DIP_MATLAB or raises the existing
+%      singleton*.
+%
+%      H = DIP_MATLAB returns the handle to a new DIP_MATLAB or the handle to
+%      the existing singleton*.
+%
+%      DIP_MATLAB('CALLBACK',hObject,eventData,handles,...) calls the local
+%      function named CALLBACK in DIP_MATLAB.M with the given input arguments.
+%
+%      DIP_MATLAB('Property','Value',...) creates a new DIP_MATLAB or raises the
+%      existing singleton*.  Starting from the left, property value pairs are
+%      applied to the GUI before DIP_matlab_OpeningFcn gets called.  An
+%      unrecognized property name or invalid value makes property application
+%      stop.  All inputs are passed to DIP_matlab_OpeningFcn via varargin.
+%
+%      *See GUI Options on GUIDE's Tools menu.  Choose "GUI allows only one
+%      instance to run (singleton)".
+%
+% See also: GUIDE, GUIDATA, GUIHANDLES
+
+% Edit the above text to modify the response to help DIP_matlab
+
+% Last Modified by GUIDE v2.5 04-Dec-2012 16:49:24
+
+% Begin initialization code - DO NOT EDIT
+gui_Singleton = 1;
+gui_State = struct('gui_Name',       mfilename, ...
+                   'gui_Singleton',  gui_Singleton, ...
+                   'gui_OpeningFcn', @DIP_matlab_OpeningFcn, ...
+                   'gui_OutputFcn',  @DIP_matlab_OutputFcn, ...
+                   'gui_LayoutFcn',  [] , ...
+                   'gui_Callback',   []);
+if nargin && ischar(varargin{1})
+    gui_State.gui_Callback = str2func(varargin{1});
+end
+
+if nargout
+    [varargout{1:nargout}] = gui_mainfcn(gui_State, varargin{:});
+else
+    gui_mainfcn(gui_State, varargin{:});
+end
+% End initialization code - DO NOT EDIT
+
+
+% --- Executes just before DIP_matlab is made visible.
+function DIP_matlab_OpeningFcn(hObject, eventdata, handles, varargin)
+% This function has no output args, see OutputFcn.
+% hObject    handle to figure
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+% varargin   command line arguments to DIP_matlab (see VARARGIN)
+
+% Choose default command line output for DIP_matlab
+handles.output = hObject;
+
+% Update handles structure
+guidata(hObject, handles);
+
+% UIWAIT makes DIP_matlab wait for user response (see UIRESUME)
+% uiwait(handles.figure1);
+
+
+% --- Outputs from this function are returned to the command line.
+function varargout = DIP_matlab_OutputFcn(hObject, eventdata, handles) 
+% varargout  cell array for returning output args (see VARARGOUT);
+% hObject    handle to figure
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Get default command line output from handles structure
+varargout{1} = handles.output;
+
+
+% --------------------------------------------------------------------
+function Untitled_1_Callback(hObject, eventdata, handles)
+% hObject    handle to Untitled_1 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+
+% --------------------------------------------------------------------
+function Untitled_2_Callback(hObject, eventdata, handles)
+% hObject    handle to Untitled_2 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+
+% --------------------------------------------------------------------
+function grayhist_Callback(hObject, eventdata, handles)
+% hObject    handle to grayhist (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+global I;
+[m,n,p]=size(I)
+if p==3
+   errordlg('请打开一幅灰色图像!');
+else
+    figure
+    subplot(1,2,1),imshow(I)   %输出图像
+    title('原始图像')    %在原始图像中加标题
+    subplot(1,2,2),
+    imhist(I); %输出原图直方图
+    title('灰度直方图')  %在原图直方图上加标题
+end
+
+% --------------------------------------------------------------------
+function Untitled_3_Callback(hObject, eventdata, handles)
+% hObject    handle to Untitled_3 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+global filename;global pathname;global I;
+[filename, pathname] = uigetfile('*.bmp','open image');
+I=imread(filename);
+axes(handles.axes1);
+imshow(I);
+title('原始图像');
+
+
+% --------------------------------------------------------------------
+function Untitled_7_Callback(hObject, eventdata, handles)
+% hObject    handle to Untitled_7 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+
+% --------------------------------------------------------------------
+function roate_Callback(hObject, eventdata, handles)
+% hObject    handle to roate (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+global I
+prompt1={'逆时针旋转角度:'};
+name1='输入旋转角度';
+defaultanswer1={'30'};
+answer1=inputdlg(prompt1,name1,1,defaultanswer1);
+theta=str2double(answer1);
+
+figure
+subplot(1,2,1),imshow(I);
+%theta = 30;
+K = imrotate(I,theta); % Try varying the angle, theta.
+subplot(1,2,2), imshow(K)
+
+
+% --------------------------------------------------------------------
+function resize_Callback(hObject, eventdata, handles)
+% hObject    handle to resize (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+global I;
+[m,n,p]=size(I);
+%输入缩放的倍数
+prompt1={'放大倍数:'};
+name1='输入缩放的倍数';
+defaultanswer1={'2'};
+answer1=inputdlg(prompt1,name1,1,defaultanswer1);
+d=str2double(answer1);
+
+figure
+B = imresize(I,d);
+imshow(B);
+[m1,n1,p1]=size(B);
+title('缩放后图像')
+
+
+
+
+% --------------------------------------------------------------------
+function Untitled_10_Callback(hObject, eventdata, handles)
+% hObject    handle to Untitled_10 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+
+% --------------------------------------------------------------------
+function BW_Callback(hObject, eventdata, handles)
+% hObject    handle to BW (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+global I;
+BW = im2bw(I,0.4); 
+figure
+subplot(1,2,1),imshow(I)   %输出图像
+title('原始图像')    %在原始图像中加标题
+subplot(1,2,2),imshow(BW)   %输出图像
+title('二值化图像')  %在原图直方图上加标题
+
+
+% --------------------------------------------------------------------
+function Untitled_14_Callback(hObject, eventdata, handles)
+% hObject    handle to Untitled_14 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+
+% --------------------------------------------------------------------
+function Untitled_15_Callback(hObject, eventdata, handles)
+% hObject    handle to Untitled_15 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+global I;
+[m,n,p]=size(I)
+if p==3
+    figure
+    subplot(2,2,1),imshow(I),title('原始图像');
+    I1=rgb2gray(I);
+    subplot(2,2,2),imshow(I1),title('灰度图像');
+    I2=edge(I1,'sobel');
+    subplot(2,2,3);
+    imshow(I2);
+    title('sobel算子分割结果');
+else
+    figure
+    subplot(1,2,1),imshow(I),title('原始图像');
+    I1=I;
+    I2=edge(I1,'sobel');
+    subplot(1,2,2);
+    imshow(I2);
+    title('sobel算子分割结果');
+end
+
+% --------------------------------------------------------------------
+function Untitled_11_Callback(hObject, eventdata, handles)
+% hObject    handle to Untitled_11 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+global I;
+J=double(I);
+J=-J+(256-1);                 %图像反转线性变换
+H=uint8(J);
+figure
+subplot(1,2,1),imshow(I);
+subplot(1,2,2),imshow(H);
+
+
+% --------------------------------------------------------------------
+function Untitled_12_Callback(hObject, eventdata, handles)
+% hObject    handle to Untitled_12 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+global I;
+[m,n,p]=size(I);
+if p==3
+    figure
+    subplot(2,2,1),imshow(I);
+    title('原始图像');
+    I1=rgb2gray(I);
+    subplot(2,2,2),imshow(I1);
+    title('灰度图像');
+    J=imadjust(I1,[0.1 0.5],[]); %局部拉伸，把[0.1 0.5]内的灰度拉伸为[0，1]
+    subplot(2,2,3),imshow(J);
+    title('线性变换图像[0.1 0.5]');
+    K=imadjust(I1,[0.3 0.7],[]); %局部拉伸，把[0.3 0.7]内的灰度拉伸为[0 1]
+    subplot(2,2,4),imshow(K);
+    title('线性变换图像[0.3 0.7]');
+else
+    figure
+    J=imadjust(I,[0.1 0.5],[]); %局部拉伸，把[0.1 0.5]内的灰度拉伸为[0，1]
+    subplot(1,2,1),imshow(J);
+    title('线性变换图像[0.1 0.5]');
+    K=imadjust(I,[0.3 0.7],[]); %局部拉伸，把[0.3 0.7]内的灰度拉伸为[0 1]
+    subplot(1,2,2),imshow(K);
+    title('线性变换图像[0.3 0.7]');
+end
+
+
+
+% --------------------------------------------------------------------
+function Untitled_13_Callback(hObject, eventdata, handles)
+% hObject    handle to Untitled_13 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+global I;
+[m,n,p]=size(I);
+if p==3
+figure
+I1=rgb2gray(I);
+subplot(1,2,1),imshow(I1);
+title(' 灰度图像');
+J=double(I1);
+J=40*(log(J+1));
+H=uint8(J);
+subplot(1,2,2),imshow(H);
+title(' 对数变换图像');
+else
+ figure
+subplot(1,2,1),imshow(I);
+title('原始图像');
+J=double(I);
+J=40*(log(J+1));
+H=uint8(J);
+subplot(1,2,2),imshow(H);
+title(' 对数变换图像');  
+end
+
+
+% --------------------------------------------------------------------
+function Untitled_16_Callback(hObject, eventdata, handles)
+% hObject    handle to Untitled_16 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+global I;
+[m,n,p]=size(I);
+if p==3
+    I1=rgb2gray(I);
+    figure;
+    subplot(2,2,1);
+    imshow(I1);title('原始灰度化图像')
+    subplot(2,2,2);
+    imhist(I1);title('原始图像直方图')
+    I2=histeq(I1);
+    subplot(2,2,3);
+    imshow(I2);title('均衡化后图像')
+    subplot(2,2,4);
+    imhist(I2);title('均衡化后图像直方图')
+else
+    figure;
+    subplot(2,2,1);
+    imshow(I);title('原始图像')
+    subplot(2,2,2);
+    imhist(I);title('原始图像直方图')
+    I2=histeq(I);
+    subplot(2,2,3);
+    imshow(I2);title('均衡化后图像')
+    subplot(2,2,4);
+    imhist(I2);title('均衡化后图像直方图')
+end
+
+
+% --------------------------------------------------------------------
+function Untitled_20_Callback(hObject, eventdata, handles)
+% hObject    handle to Untitled_20 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+
+% --------------------------------------------------------------------
+function Untitled_18_Callback(hObject, eventdata, handles)
+% hObject    handle to Untitled_18 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+
+% --------------------------------------------------------------------
+function Untitled_19_Callback(hObject, eventdata, handles)
+% hObject    handle to Untitled_19 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+
+% --------------------------------------------------------------------
+function Untitled_17_Callback(hObject, eventdata, handles)
+% hObject    handle to Untitled_17 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+
+% --------------------------------------------------------------------
+function Untitled_21_Callback(hObject, eventdata, handles)
+% hObject    handle to Untitled_21 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+global I;
+[m,n,p]=size(I);
+if p==3
+    figure
+    subplot(231)
+    imshow(I)
+    title('原始图像')
+    I1=rgb2gray(I);  
+else
+    figure
+    subplot(231)
+    imshow(I)
+    title('原始图像')
+    I1=I;  
+end
+    I2=imnoise(I1,'salt & pepper',0.02);
+    subplot(232)
+    imshow(I2)
+    title(' 添加椒盐噪声的图像')
+    k1=filter2(fspecial('average',3),I2)/255;          %进行3*3模板平滑滤波
+    k2=filter2(fspecial('average',5),I2)/255;          %进行5*5模板平滑滤波
+    k3=filter2(fspecial('average',7),I1)/255;          %进行7*7模板平滑滤波
+    k4=filter2(fspecial('average',9),I2)/255;          %进行9*9模板平滑滤波
+    subplot(233),imshow(k1);title('3*3 模板平滑滤波');
+    subplot(234),imshow(k2);title('5*5 模板平滑滤波');
+    subplot(235),imshow(k3);title('7*7 模板平滑滤波');
+    subplot(236),imshow(k4);title('9*9 模板平滑滤波');
+
+
+% --------------------------------------------------------------------
+function Untitled_22_Callback(hObject, eventdata, handles)
+% hObject    handle to Untitled_22 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+global I;
+[m,n,p]=size(I);
+if p==3
+    figure
+    I1=rgb2gray(I);
+else
+    I1=I;
+end
+    J=imnoise(I1,'salt & pepper',0.02);
+    subplot(231),imshow(I);title('原图像');
+    subplot(232),imshow(J);title('添加椒盐噪声图像');
+    k1=medfilt2(J);            %进行3*3模板中值滤波
+    k2=medfilt2(J,[5,5]);      %进行5*5模板中值滤波
+    k3=medfilt2(J,[7,7]);      %进行7*7模板中值滤波
+    k4=medfilt2(J,[9,9]);      %进行9*9模板中值滤波
+    subplot(233),imshow(k1);title('3*3模板中值滤波');
+    subplot(234),imshow(k2);title('5*5模板中值滤波 ');
+    subplot(235),imshow(k3);title('7*7模板中值滤波');
+    subplot(236),imshow(k4);title('9*9 模板中值滤波');
+
+
+% --------------------------------------------------------------------
+function Untitled_23_Callback(hObject, eventdata, handles)
+% hObject    handle to Untitled_23 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+global I;
+% subplot(1,2,1),imshow(I);
+% title('原始图像');
+figure
+I1=im2bw(I);
+subplot(1,2,1),imshow(I1);
+title('二值图像');
+H=fspecial('sobel');     %选择sobel算子
+J=filter2(H,I1);            %卷积运算
+subplot(1,2,2),imshow(J);
+title('sobel算子锐化图像');
+
+
+
+
+
+% --------------------------------------------------------------------
+function Untitled_24_Callback(hObject, eventdata, handles)
+% hObject    handle to Untitled_24 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+global I;
+figure
+I1=im2bw(I);
+subplot(1,2,1),imshow(I1);
+title('二值图像');
+I1=double(I1);
+h=[0 1 0,1 -4 1,0 1 0];   %拉普拉斯算子
+J1=conv2(I1,h,'same');            %卷积运算
+subplot(1,2,2),imshow(J1);
+title('拉普拉斯算子锐化图像');
+
+
+% --------------------------------------------------------------------
+function Untitled_25_Callback(hObject, eventdata, handles)
+% hObject    handle to Untitled_25 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+
+% --------------------------------------------------------------------
+function Untitled_26_Callback(hObject, eventdata, handles)
+% hObject    handle to Untitled_26 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+global I;
+[m,n,p]=size(I)
+    if p==3
+    figure
+    subplot(2,2,1),imshow(I),title('原始图像');
+    I1=rgb2gray(I);
+    subplot(2,2,2),imshow(I1),title('灰度图像');
+    I2=edge(I1,'log');
+    subplot(2,2,3);
+    imshow(I2);
+    title('log算子分割结果');
+else
+    figure
+    subplot(1,2,1),imshow(I),title('原始图像');
+    I1=I;
+    I2=edge(I1,'log');
+    subplot(1,2,2);
+    imshow(I2);
+    title('log算子分割结果');
+end
+
+
+% --------------------------------------------------------------------
+function Untitled_27_Callback(hObject, eventdata, handles)
+% hObject    handle to Untitled_27 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+global I;
+[m,n,p]=size(I)
+    if p==3
+    figure
+    subplot(2,2,1),imshow(I),title('原始图像');
+    I1=rgb2gray(I);
+    subplot(2,2,2),imshow(I1),title('灰度图像');
+    I2=edge(I1,'canny');
+    subplot(2,2,3);
+    imshow(I2);
+    title('canny算子分割结果');
+else
+    figure
+    subplot(1,2,1),imshow(I),title('原始图像');
+    I1=I;
+    I2=edge(I1,'canny');
+    subplot(1,2,2);
+    imshow(I2);
+    title('canny算子分割结果');
+end
+
+
+% --------------------------------------------------------------------
+function Untitled_28_Callback(hObject, eventdata, handles)
+% hObject    handle to Untitled_28 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+global I;
+
+[m,n,p]=size(I);
+if p==3
+    I1=rgb2gray(I);                %将彩色图像转化灰度图像
+else 
+    I1=I;
+end
+% threshold=graythresh(I1);        %计算将灰度图像转化为二值图像所需的门限
+% BW=im2bw(I1, threshold);       %将灰度图像转化为二值图像
+figure
+imshow(I1);title('灰度图像');hold on
+% dim=size(BW);
+% col=round(dim(2)/2)-90;         %计算起始点列坐标
+% row=find(BW(:,col),1);          %计算起始点行坐标
+% connectivity=8;
+% num_points=180;
+% contour=bwtraceboundary(BW,[row,col],'N',connectivity,num_points);
+%提取边界
+% subplot(122),imshow(I1);
+% hold on;
+% plot(contour(:,2),contour(:,1), 'g','LineWidth' ,2);
+% title('边界跟踪图像');
+C1 = contour_following(I1);
+plot(C1(:,2),C1(:,1),'r.');
+% for j=1:size(C1,1),
+%     text(C1(j,2),C1(j,1),['  ' num2str(j)]);
+% end
+
+% --------------------------------------------------------------------
+function Untitled_29_Callback(hObject, eventdata, handles)
+% hObject    handle to Untitled_29 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+global I;
+[g,k,p]=size(I);
+if p==3
+   I1=rgb2gray(I);
+else 
+    I1=I;
+end
+figure;
+subplot(2,2,1);
+imshow(I1);
+title(' 灰度图像')
+
+[m,n]=size(I1);                            %测量图像尺寸参数
+GP=zeros(1,256);                           %预创建存放灰度出现概率的向量
+for k=0:255
+     GP(k+1)=length(find(I1==k))/(m*n);    %计算每级灰度出现的概率，将其存入GP中相应位置
+end
+subplot(2,2,2),bar(0:255,GP,'g')                   %绘制直方图
+title('灰度直方图')
+ylabel('出现概率')
+
+prompt1={'二值化阈值1:','二值化阈值2:'};
+name1='输入二值化阈值';
+defaultanswer1={'150','200'};
+answer1=inputdlg(prompt1,name1,1,defaultanswer1);
+d1=str2double(answer1(1));
+d2=str2double(answer1(2));
+
+I2=im2bw(I,d1/255);  
+subplot(2,2,3),imshow(I2);
+title('阈值1的分割图像')
+
+I3=im2bw(I,d2/255);   %
+subplot(2,2,4),imshow(I3);
+title('阈值2的分割图像')
+
+
+% --------------------------------------------------------------------
+function Untitled_30_Callback(hObject, eventdata, handles)
+% hObject    handle to Untitled_30 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+global I;
+figure
+subplot(1,2,1),imshow(I);
+title('原始图像')
+level=graythresh(I);     %确定灰度阈值
+BW=im2bw(I,level);
+subplot(1,2,2),imshow(BW);
+title('Otsu 法阈值分割图像')
+
+
+% --------------------------------------------------------------------
+function Untitled_31_Callback(hObject, eventdata, handles)
+% hObject    handle to Untitled_31 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+global I;
+[m,n,p]=size(I)
+if p==3
+    figure
+    I1=rgb2gray(I);
+    subplot(1,2,1);
+    imshow(I1);
+    title('灰度图像')  
+else
+    figure
+    I1=I;
+    subplot(1,2,1);
+    imshow(I1);
+    title('原始图像')  
+end
+
+se=strel('disk',1);          %生成圆形结构元素
+I2=imdilate(I1,se);             %用生成的结构元素对图像进行膨胀
+subplot(1,2,2);
+imshow(I2);
+title('膨胀后图像');
+
+
+
+
+% --------------------------------------------------------------------
+function Untitled_32_Callback(hObject, eventdata, handles)
+% hObject    handle to Untitled_32 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+global I;
+[m,n,p]=size(I);
+if p==3
+    figure
+    I1=rgb2gray(I);
+    subplot(1,2,1);
+    imshow(I1);
+    title('灰度图像')  
+else
+    figure
+    I1=I;
+    subplot(1,2,1);
+    imshow(I1);
+    title('原始图像')  
+end
+
+se=strel('disk',1);       %生成圆形结构元素
+I2=imerode(I1,se);        %用生成的结构元素对图像进行腐蚀
+subplot(1,2,2);
+imshow(I2);
+title('腐蚀后图像');
+
+
+
+% --------------------------------------------------------------------
+function Untitled_33_Callback(hObject, eventdata, handles)
+% hObject    handle to Untitled_33 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+global I;
+[m,n,p]=size(I)
+if p==3
+    figure
+    I1=rgb2gray(I);
+    subplot(1,3,1);
+    imshow(I1);
+    title('灰度图像')  
+else
+    figure
+    I1=I;
+    subplot(1,3,1);
+    imshow(I1);
+    title('原始图像')  
+end   
+se=strel('disk',1);     %采用半径为1的圆作为结构元素
+I2=imopen(I1,se);         %开启操作
+I3=imclose(I1,se);        %闭合操作
+subplot(1,3,2),imshow(I2);
+title('开启运算后图像');
+
+subplot(1,3,3),imshow(I3);
+title('闭合运算后图像');
+
+
+
+% --------------------------------------------------------------------
+function Untitled_34_Callback(hObject, eventdata, handles)
+% hObject    handle to Untitled_34 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+global I;
+figure
+I1=im2bw(I);
+subplot(1,2,1),imshow(I1);
+title('二值化图像');
+I2=bwperim(I1);                 %获取区域的周长
+subplot(1,2,2),imshow(I2);
+title('边界周长的二值图像');
+  
+
+
+% --------------------------------------------------------------------
+function Untitled_35_Callback(hObject, eventdata, handles)
+% hObject    handle to Untitled_35 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+global I;
+figure
+subplot(2,2,1),imshow(I);
+title('原始图像');      
+I1=im2bw(I);
+subplot(2,2,2),imshow(I1);
+title('二值图像');     
+I2=bwmorph(I1,'skel',1);
+subplot(2,2,3),imshow(I2);
+title('1次骨架提取');      
+I3=bwmorph(I1,'skel',2);
+subplot(2,2,4),imshow(I3);
+title('2次骨架提取');
+
+
+% --------------------------------------------------------------------
+function gray_Callback(hObject, eventdata, handles)
+% hObject    handle to gray (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+global I;
+axes(handles.axes2)
+I1=rgb2gray(I);
+imshow(I1);
+title('灰度化图像');
+
+
+% --------------------------------------------------------------------
+function Untitled_36_Callback(hObject, eventdata, handles)
+% hObject    handle to Untitled_36 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+global I;
+[m,n,p]=size(I)
+if p==3
+    figure
+    subplot(2,2,1),imshow(I),title('原始图像');
+    I1=rgb2gray(I);
+    subplot(2,2,2),imshow(I1),title('灰度图像');
+    I2=edge(I1,'prewitt');
+    subplot(2,2,3);
+    imshow(I2);
+    title('prewitt算子分割结果');
+else
+    figure
+    subplot(1,2,1),imshow(I),title('原始图像');
+    I1=I;
+    I2=edge(I1,'prewitt');
+    subplot(1,2,2);
+    imshow(I2);
+    title('prewitt算子分割结果');
+end
+

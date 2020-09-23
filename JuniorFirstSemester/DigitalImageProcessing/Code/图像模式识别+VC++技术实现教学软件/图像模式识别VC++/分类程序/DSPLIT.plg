@@ -1,0 +1,48 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: DSPLIT - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP63.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/DSPLIT.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"F:\模式识别书\20050508\模式识别程序\分类程序\DSPLITView.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP63.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP64.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/DSPLIT.pdb" /debug /machine:I386 /out:"Debug/DSPLIT.exe" /pdbtype:sept 
+".\Debug\BpNet.obj"
+".\Debug\Cdib.obj"
+".\Debug\Classification.obj"
+".\Debug\DlgClassify.obj"
+".\Debug\Dlgdisplay.obj"
+".\Debug\DlgNumber.obj"
+".\Debug\DlgTemplate.obj"
+".\Debug\DlgWeight.obj"
+".\Debug\DSPLIT.obj"
+".\Debug\DSPLITDoc.obj"
+".\Debug\DSPLITView.obj"
+".\Debug\DYNSPLITTERWND.OBJ"
+".\Debug\DynSplitView2.obj"
+".\Debug\GetFeature.obj"
+".\Debug\MainFrm.obj"
+".\Debug\StdAfx.obj"
+".\Debug\DSPLIT.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP64.tmp"
+<h3>Output Window</h3>
+Compiling...
+DSPLITView.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+DSPLIT.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

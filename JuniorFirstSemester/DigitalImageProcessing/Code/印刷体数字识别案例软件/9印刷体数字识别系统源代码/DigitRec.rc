@@ -1,0 +1,438 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\DigitRec.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  20, 18
+BEGIN
+    BUTTON      IDmy_FILE_OPEN_BMP
+    BUTTON      IDmy_FILE_SAVE_BMP
+    BUTTON      IDmy_FILE_RE_LOAD_BMP
+    SEPARATOR
+    BUTTON      IDmy_BPNET_TRAIN
+    SEPARATOR
+    BUTTON      IDmy_BPNET_RECOGNIZE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "打开(&O)",                    IDmy_FILE_OPEN_BMP
+        MENUITEM "另存为",                      IDmy_FILE_SAVE_BMP
+        MENUITEM "重新加载",                    IDmy_FILE_RE_LOAD_BMP
+        MENUITEM "退出(&X)",                    ID_APP_EXIT
+    END
+    POPUP "图像预处理"
+    BEGIN
+        MENUITEM "输入归一化宽度和高度信息",    ID_INPUT1
+        MENUITEM SEPARATOR
+        MENUITEM "图像预处理:一次性执行(1)~(8)", IDmy_IMGPRC_ALL
+        MENUITEM SEPARATOR
+        MENUITEM "(1)256转灰度图",              IDmy_IMGPRC_256ToGray
+        MENUITEM "(2)二值化",                   IDmy_IMGPRC_GrayToWhiteBlack
+        MENUITEM "(3)梯度锐化",                 IDmy_IMGPRC_SHARP
+        MENUITEM "(4)去离散噪声",               IDmy_IMGPRC_REMOVE_NOISE
+        MENUITEM "(5)整体倾斜调整",             IDmy_IMGPRC_ADJUST_SLOPE
+        MENUITEM "(6)字符分割",                 IDmy_IMGPRC_DIVIDE
+        MENUITEM "(7)尺寸标准归一化",           IDmy_IMGPRC_STANDARIZE
+        MENUITEM "(8)紧缩重排",                 IDmy_IMGPRC_SHRINK_ALIGN
+        MENUITEM SEPARATOR
+        MENUITEM "保存图像预处理结果为bmp(非必须)", 
+                                                IDmy_IMGPRC_TO_DIB_AND_SAVE
+    END
+    POPUP "神经网络识别"
+    BEGIN
+        MENUITEM "训练网络",                    IDmy_BPNET_TRAIN
+        MENUITEM "进行字符识别",                IDmy_BPNET_RECOGNIZE
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于DigitRec...",             ID_APP_ABOUT
+        MENUITEM SEPARATOR
+        MENUITEM "细化",                        IDmy_IMGPRC_THINNING
+        MENUITEM "均值滤波",                    ID_aver
+        MENUITEM "高斯滤波",                    ID_Gass
+        MENUITEM "中值滤波",                    ID_Mid
+        MENUITEM "直方图均衡",                  IDmy_IMGPRC_EQUALIZE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About DigitRec"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "DigitRec Version 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2004",IDC_STATIC,39,23,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+    LTEXT           "Author: Zhao Hui",IDC_STATIC,41,35,68,13
+END
+
+IDD_DIALOG1 DIALOG DISCARDABLE  50, 80, 187, 94
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "信息输入对话框"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,34,68,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,101,67,50,14
+    EDITTEXT        IDC_EDIT1,131,18,32,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,131,41,32,12,ES_AUTOHSCROLL
+    LTEXT           "请输入归一化后每个字符的宽度",IDC_STATIC,7,19,113,8
+    LTEXT           "请输入归一化后每个字符的高度",IDC_STATIC,7,43,113,8
+END
+
+IDD_DIALOG2 DIALOG DISCARDABLE  0, 0, 207, 147
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "BP网络参数设定"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,141,57,50,14
+    EDITTEXT        IDC_n_hidden,76,25,22,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_eta,74,93,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ex,75,47,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_a,75,69,40,14,ES_AUTOHSCROLL
+    LTEXT           " 隐层结点个数",IDC_STATIC,23,28,51,8
+    LTEXT           "个",IDC_STATIC,101,28,9,8
+    LTEXT           "最小均方误差",IDC_STATIC,22,49,50,13
+    LTEXT           "相关系数",IDC_STATIC,36,72,33,8
+    LTEXT           "训练步长",IDC_STATIC,38,96,33,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        VERTGUIDE, 7
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 200
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 140
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDmy_FILE_OPEN_BMP      "打开一个图像文件"
+    IDmy_FILE_SAVE_BMP      "保存一个图像文件"
+    IDmy_IMGPRC_ALL         "自动对读入的图像进行分析（相当于手动逐步执行步骤1～9）"
+    IDmy_IMGPRC_TO_DIB_AND_SAVE "将最终结果保存于HDIB链表以及输出BMP文件"
+    IDmy_FILE_RE_LOAD_BMP   "取消一切更改，重新加载图像文件"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_EXIT             "退出该程序"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDmy_BPNET_TRAIN        "训练BP神经网络"
+    IDmy_BPNET_TZTQ         "对已经预处理后的图像字符来提取特征"
+    IDmy_BPNET_RECOGNIZE    "识别当前图片中的数字"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\DigitRec.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "DigitRec MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "DigitRec\0"
+            VALUE "LegalCopyright", "Copyright (C) 2004\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "DigitRec.EXE\0"
+            VALUE "ProductName", "DigitRec Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "DigitRec"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "DigitRec"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\DigitRec.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

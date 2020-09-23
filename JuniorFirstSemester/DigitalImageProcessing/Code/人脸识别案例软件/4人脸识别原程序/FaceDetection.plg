@@ -1,0 +1,78 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: FaceDetection - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSPD5E9.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/FaceDetection.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\To刘学姐\复件 人脸识别\FaceDetectionDoc.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSPD5E9.tmp" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSPD5F9.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/FaceDetection.pdb" /debug /machine:I386 /out:"Debug/FaceDetection.exe" /pdbtype:sept 
+".\Debug\DIBAPI.OBJ"
+".\Debug\FaceDetection.obj"
+".\Debug\FaceDetectionDoc.obj"
+".\Debug\FaceDetectionView.obj"
+".\Debug\MainFrm.obj"
+".\Debug\StdAfx.obj"
+".\Debug\FaceDetection.res"
+"E:\PixelFusion\PixelFusion\SkinMagicLib.lib"
+"E:\PixelFusion\PixelFusion\DETOURS.lib"
+]
+Creating command line "link.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSPD5F9.tmp"
+<h3>Output Window</h3>
+Compiling...
+FaceDetectionDoc.cpp
+D:\To刘学姐\复件 人脸识别\FaceDetectionDoc.cpp(226) : warning C4244: '*=' : conversion from 'double' to 'int', possible loss of data
+D:\To刘学姐\复件 人脸识别\FaceDetectionDoc.cpp(234) : warning C4244: '*=' : conversion from 'double' to 'int', possible loss of data
+D:\To刘学姐\复件 人脸识别\FaceDetectionDoc.cpp(240) : warning C4244: '*=' : conversion from 'double' to 'int', possible loss of data
+D:\To刘学姐\复件 人脸识别\FaceDetectionDoc.cpp(263) : warning C4244: '=' : conversion from 'long' to 'unsigned short', possible loss of data
+D:\To刘学姐\复件 人脸识别\FaceDetectionDoc.cpp(321) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+D:\To刘学姐\复件 人脸识别\FaceDetectionDoc.cpp(324) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+D:\To刘学姐\复件 人脸识别\FaceDetectionDoc.cpp(334) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+D:\To刘学姐\复件 人脸识别\FaceDetectionDoc.cpp(337) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+D:\To刘学姐\复件 人脸识别\FaceDetectionDoc.cpp(359) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+D:\To刘学姐\复件 人脸识别\FaceDetectionDoc.cpp(360) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+D:\To刘学姐\复件 人脸识别\FaceDetectionDoc.cpp(396) : warning C4305: 'initializing' : truncation from 'const double' to 'const float'
+D:\To刘学姐\复件 人脸识别\FaceDetectionDoc.cpp(398) : warning C4305: 'initializing' : truncation from 'const double' to 'const float'
+D:\To刘学姐\复件 人脸识别\FaceDetectionDoc.cpp(400) : warning C4305: 'initializing' : truncation from 'const double' to 'const float'
+D:\To刘学姐\复件 人脸识别\FaceDetectionDoc.cpp(402) : warning C4305: 'initializing' : truncation from 'const double' to 'const float'
+D:\To刘学姐\复件 人脸识别\FaceDetectionDoc.cpp(403) : warning C4305: 'initializing' : truncation from 'const double' to 'const float'
+D:\To刘学姐\复件 人脸识别\FaceDetectionDoc.cpp(405) : warning C4305: 'initializing' : truncation from 'const double' to 'const float'
+D:\To刘学姐\复件 人脸识别\FaceDetectionDoc.cpp(407) : warning C4305: 'initializing' : truncation from 'const double' to 'const float'
+D:\To刘学姐\复件 人脸识别\FaceDetectionDoc.cpp(411) : warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+D:\To刘学姐\复件 人脸识别\FaceDetectionDoc.cpp(413) : warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+D:\To刘学姐\复件 人脸识别\FaceDetectionDoc.cpp(415) : warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+D:\To刘学姐\复件 人脸识别\FaceDetectionDoc.cpp(443) : warning C4244: 'argument' : conversion from 'long' to 'unsigned short', possible loss of data
+D:\To刘学姐\复件 人脸识别\FaceDetectionDoc.cpp(444) : warning C4244: 'argument' : conversion from 'long' to 'unsigned short', possible loss of data
+D:\To刘学姐\复件 人脸识别\FaceDetectionDoc.cpp(862) : warning C4244: 'argument' : conversion from 'long' to 'unsigned short', possible loss of data
+D:\To刘学姐\复件 人脸识别\FaceDetectionDoc.cpp(985) : warning C4244: 'argument' : conversion from 'long' to 'unsigned short', possible loss of data
+D:\To刘学姐\复件 人脸识别\FaceDetectionDoc.cpp(1126) : warning C4244: 'argument' : conversion from 'long' to 'unsigned short', possible loss of data
+D:\To刘学姐\复件 人脸识别\FaceDetectionDoc.cpp(1189) : warning C4244: 'argument' : conversion from 'long' to 'unsigned short', possible loss of data
+D:\To刘学姐\复件 人脸识别\FaceDetectionDoc.cpp(1255) : warning C4244: 'argument' : conversion from 'long' to 'unsigned short', possible loss of data
+D:\To刘学姐\复件 人脸识别\FaceDetectionDoc.cpp(1240) : warning C4101: 'lpData' : unreferenced local variable
+D:\To刘学姐\复件 人脸识别\FaceDetectionDoc.cpp(1374) : warning C4244: 'argument' : conversion from 'long' to 'unsigned short', possible loss of data
+D:\To刘学姐\复件 人脸识别\FaceDetectionDoc.cpp(1503) : warning C4244: 'argument' : conversion from 'long' to 'unsigned short', possible loss of data
+D:\To刘学姐\复件 人脸识别\FaceDetectionDoc.cpp(1499) : warning C4101: 'lOffset' : unreferenced local variable
+D:\To刘学姐\复件 人脸识别\FaceDetectionDoc.cpp(1540) : warning C4244: 'argument' : conversion from 'long' to 'unsigned short', possible loss of data
+D:\To刘学姐\复件 人脸识别\FaceDetectionDoc.cpp(1540) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+D:\To刘学姐\复件 人脸识别\FaceDetectionDoc.cpp(1702) : warning C4244: 'argument' : conversion from 'long' to 'unsigned short', possible loss of data
+D:\To刘学姐\复件 人脸识别\FaceDetectionDoc.cpp(1703) : warning C4244: 'argument' : conversion from 'long' to 'unsigned short', possible loss of data
+D:\To刘学姐\复件 人脸识别\FaceDetectionDoc.cpp(1704) : warning C4244: 'argument' : conversion from 'long' to 'unsigned short', possible loss of data
+D:\To刘学姐\复件 人脸识别\FaceDetectionDoc.cpp(1816) : warning C4244: 'initializing' : conversion from 'float' to 'long', possible loss of data
+D:\To刘学姐\复件 人脸识别\FaceDetectionDoc.cpp(1828) : warning C4244: '=' : conversion from 'float' to 'long', possible loss of data
+Linking...
+
+
+
+<h3>Results</h3>
+FaceDetection.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

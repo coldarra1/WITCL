@@ -5,12 +5,11 @@
 从未知到理解，过程是艰辛的，而在这个过程中我们时常收集起许多资料和情报。    
 我们也是这样的找各种各样的资料。    
 创建这个项目，意义在于让我们前人走过的弯路，后人少走，希望你们可以从中受益。    
-如何寻找资源： [寻找学习资源](https://raw.githubusercontent.com/IvyHole/WITCL/master/%E5%AF%BB%E6%89%BE%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%BA%90.docx "寻找学习资源")   
 下载方式：在GitHub上找到并打开你想要下载的文件，点击Download即可，或者在直接点击[这里](https://codeload.github.com/IvyHole/WITCL/zip/master )下载全部。  
-（如果项目文件内存在侵权的文件们可以联系管理员删除）  
-[备用下载地址](http://witcl.ys168.com/) 流量不多如果真的在github上下载不了再用备用地址。（ps：一般在github上刷新几次就可以下载了）
+（如果项目文件内存在侵权的文件可以联系管理员删除）  
+下载速度很慢？众所周知的不可抗拒的原因吧。具体原因请自行百度搜索“Github下载速度慢”。
 
-### 目录
+### 目录（由于编码原因，此项目的文件名为英文）
 ***
 + ACM
     + ACM社团规章制度
@@ -47,6 +46,7 @@
     + 数据库
     + 算法设计与分析
     + 软件工程
+    + 数字图像处理
 + 大三下
     + 软件工程
 + 考研
@@ -54,7 +54,6 @@
     + 武汉大学933计算机基础
     + 名校操作系统历年考试试题(含解答)
     + 百校专业课真题链接
-+ 非计算机专业的C语言试题
 + WIT 校园网
     + windows客户端
     + 安卓客户端
@@ -74,7 +73,7 @@
 >Facebook： [康次学长](https://www.facebook.com/xiao.kang.5209 "kcxz")  
 >Twitter: [xiaokang](https://www.twitter.com/xiaokan56671265)  
 >资料捐赠邮箱： 1531001402@qq.com  
-        
+
 IvyHole：
 >Github： [IvyHole](https://github.com/IvyHole "IvyHole")  
 >Website： [IvyHole](https://ivyhole.com "IvyHole")  
@@ -82,8 +81,7 @@ IvyHole：
 
 Chars：
 >Github： [Charsnows](https://github.com/Charsnows "Charsnows")  
->Facebook： [Chars](https://www.facebook.com/sakura.char.7 "Charsnows")  
->Twitter: [Chars](https://twitter.com/___Chiffon____)  
+>Facebook： [Chars](https://www.facebook.com/sakura.char.7 "Charsnows")   
 >资料捐赠邮箱： 2605241380@qq.com  
 
 如果你想匿名贡献，可以Email至以上联系人的邮箱。（注明"WIT捐献资料"即可）    
