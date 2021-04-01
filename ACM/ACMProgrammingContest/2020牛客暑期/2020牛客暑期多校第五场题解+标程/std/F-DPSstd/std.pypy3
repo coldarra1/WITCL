@@ -1,0 +1,15 @@
+n = int(input())
+d = []
+ma = 0
+for i in range(n):
+    a = int(input())
+    d.append(a)
+    ma = max(a, ma)
+for i in d:
+    s = (i * 50 + ma - 1) // ma
+    print("+" + "-" * s + "+")
+    if i == ma:
+        print("|" + " " * (s - 1) + "*|" + str(i))
+    else:
+        print("|" + " " * s + "|" + str(i))
+    print("+" + "-" * s + "+")
