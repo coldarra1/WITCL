@@ -16,6 +16,8 @@ WolframAlpha，计算积分、导数:[https://www.wolframalpha.com/](https://www
 
 Symbolab，计算矩阵的逆、特征值、特征向量，也可计算积分、导数:[https://www.symbolab.com/](https://www.symbolab.com/)  
 
+Geogebra，绘制函数图像:[https://www.geogebra.org/graphing](https://www.geogebra.org/graphing)
+
 OEIS，寻找未知的数列规律:[https://oeis.org/](https://oeis.org/)
 
 菜鸟教程，学习新的编程语言:[https://www.runoob.com/](https://www.runoob.com/)  
