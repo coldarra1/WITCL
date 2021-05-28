@@ -21,3 +21,5 @@ Geogebra，绘制函数图像:[https://www.geogebra.org/graphing](https://www.ge
 OEIS，寻找未知的数列规律:[https://oeis.org/](https://oeis.org/)
 
 菜鸟教程，学习新的编程语言:[https://www.runoob.com/](https://www.runoob.com/)  
+
+编程风格:[https://github.com/zh-google-styleguide/zh-google-styleguide](https://github.com/zh-google-styleguide/zh-google-styleguide)
