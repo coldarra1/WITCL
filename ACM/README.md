@@ -22,4 +22,6 @@ OEIS，寻找未知的数列规律:[https://oeis.org/](https://oeis.org/)
 
 菜鸟教程，学习新的编程语言:[https://www.runoob.com/](https://www.runoob.com/)  
 
-编程风格:[https://github.com/zh-google-styleguide/zh-google-styleguide](https://github.com/zh-google-styleguide/zh-google-styleguide)
+编程风格:[https://github.com/zh-google-styleguide/zh-google-styleguide](https://github.com/zh-google-styleguide/zh-google-styleguide)  
+
+青岛大学OJ，可以将此OJ搭建在自己的云服务器或者虚拟机上，比较容易上手：[https://github.com/QingdaoU/OnlineJudgeDeploy/tree/2.0](https://github.com/QingdaoU/OnlineJudgeDeploy/tree/2.0)
