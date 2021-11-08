@@ -1,2 +1,0 @@
-# Learning-About-Data-Structure
-武汉大学计算机学院数据结构教材课件及学习过程中自己码的和部分ppt附的源程序
