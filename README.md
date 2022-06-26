@@ -69,11 +69,6 @@
 >Twitter: [xiaokang](https://www.twitter.com/xiaokan56671265)  
 >资料捐赠邮箱： 1531001402@qq.com  
 
-IvyHole：
->Github： [IvyHole](https://github.com/IvyHole "IvyHole")  
->Website： [IvyHole](https://ivyhole.com "IvyHole")  
->资料捐赠邮箱： bhddts@gmail.com  
-
 Chars：
 >Github： [Charsnows](https://github.com/Charsnows "Charsnows")  
 >Facebook： [Chars](https://www.facebook.com/sakura.char.7 "Charsnows")   
@@ -83,7 +78,7 @@ Chars：
 如果你想加入我们，可以联系IvyHole即可。    
 
 ###### 贡献过的同学
-[kcxz](https://github.com/kcxz "kcxz")、[IvyHole](https://github.com/IvyHole "IvyHole")、[Chaney丶](https://www.witchen.cn "Chaney丶")、[StarrySky](https://starrysky1024.com/ "StarrySky")、[kingwhylove](https://gitee.com/kingwhylove)、610
+[kcxz](https://github.com/kcxz "kcxz")、[IHMoESu](https://github.com/IvyHole "IvyHole")、[Chaney丶](https://www.witchen.cn "Chaney丶")、[StarrySky](https://starrysky1024.com/ "StarrySky")、[kingwhylove](https://gitee.com/kingwhylove)、610
 ### 警告
 ***
 #### 武汉工程大学学生违纪处分办法（修订）    2016-08-27
