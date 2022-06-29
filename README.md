@@ -63,12 +63,6 @@
 可以在issues中提出你的建议，或者直接联系我们。    
 
 ##### 联系方式
-康次学长：
->Github： [kcxz](https://github.com/kcxz "kcxz")  
->Facebook： [康次学长](https://www.facebook.com/xiao.kang.5209 "kcxz")  
->Twitter: [xiaokang](https://www.twitter.com/xiaokan56671265)  
->资料捐赠邮箱： 1531001402@qq.com  
-
 Chars：
 >Github： [Charsnows](https://github.com/Charsnows "Charsnows")  
 >Facebook： [Chars](https://www.facebook.com/sakura.char.7 "Charsnows")   
