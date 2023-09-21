@@ -62,14 +62,9 @@
 欢迎纠错、提供资料、提供选课攻略、考试攻略等    
 可以在issues中提出你的建议，或者直接联系我们。    
 
-##### 联系方式
-Chars：
->Github： [Charsnows](https://github.com/Charsnows "Charsnows")  
->Facebook： [Chars](https://www.facebook.com/sakura.char.7 "Charsnows")   
->资料捐赠邮箱： 2605241380@qq.com  
 
 如果你想匿名贡献，可以Email至以上联系人的邮箱。（注明"WIT捐献资料"即可）    
-如果你想加入我们，可以联系IvyHole即可。    
+如果你想加入我们，可以联系WITACM协会成员咨询即可。    
 
 ###### 贡献过的同学
 [kcxz](https://github.com/kcxz "kcxz")、[IHMoESu](https://github.com/IvyHole "IvyHole")、[Chaney丶](https://www.witchen.cn "Chaney丶")、[StarrySky](https://starrysky1024.com/ "StarrySky")、[kingwhylove](https://gitee.com/kingwhylove)、610
